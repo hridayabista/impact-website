@@ -1,0 +1,407 @@
+.course-content_container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.course-content_header {
+    position: relative;
+    height: 20rem;
+    background: #0276BD;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.course-content_header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/graphics.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.5;
+    filter: blur(3px);
+    /* Adjust the opacity as needed */
+    z-index: 0;
+}
+
+.course-content_header * {
+    position: relative;
+    z-index: 1;
+}
+
+.course-content_header h3,
+.course-content_header p {
+    position: relative;
+    top: 2rem;
+}
+
+.course-content_header h3 {
+    font-size: 50px;
+    color: #ffff;
+}
+
+.course-content_header p,
+i {
+    font-size: 25px;
+    color: #d7d5d5;
+}
+
+.course-content_header i {
+    position: relative;
+    right: 20px;
+}
+
+.course-content_main {
+    position: relative;
+    top: 5rem;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.content_main {
+    width: 100%;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_main h2 {
+    color: #0276BD;
+}
+
+.content_main p {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+        25px 35px 20px rgba(0, 0, 0, 0.05),
+        25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    color: #000;
+    font-size: 18px;
+}
+
+.main_course-content {
+    min-height: 450vh;
+    width: 100vw;
+    background: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_course-header {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_course-header h2 {
+    font-size: 50px;
+    color: #0276BD;
+}
+
+.course-title {
+    width: 70%;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.course-title h3 {
+    font-size: 30px;
+    color: #0d0065;
+}
+
+.course-title span {
+    color: #0276BD;
+}
+
+.courses-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.course-week {
+    position: relative;
+    margin-top: 20px;
+    top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.course-week h3 {
+    font-size: 25px;
+    color: #0276BD;
+    width: 500px;
+}
+
+.course-day {
+    position: relative;
+    width: 100%;
+    display: flex;
+    background: #0276BD;
+    color: #fff;
+    padding: 30px;
+}
+
+.course-day .course-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.course-items li {
+    list-style: disc;
+    font-size: 18px;
+}
+
+
+
+.job-container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.job-header {
+    position: relative;
+    height: 20rem;
+    background: #0276BD;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.job-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/graphics.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.5;
+    filter: blur(3px);
+    /* Adjust the opacity as needed */
+    z-index: 0;
+}
+
+.job-header * {
+    position: relative;
+    z-index: 1;
+}
+
+.job-header h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.job-title {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-card,
+.salary-card {
+    width: 45%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #bbdaff;
+}
+
+.job-card h2 {
+    font-size: 50px;
+    color: #0276BD;
+    font-weight: 700;
+}
+
+.salary-card p {
+    font-size: 40px;
+    color: #514040;
+}
+
+.placement-container {
+    min-height: 150vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.place-card {
+    width: 45%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #bbdaff;
+}
+
+.place-card h2 {
+    font-size: 25px;
+    color: #0276BD;
+    font-weight: 700;
+}
+
+
+/* Responsive Design  */
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .course-content_container {
+        gap: 2rem;
+    }
+
+    .course-content_header {
+        height: 15rem;
+    }
+
+    .course-content_header h3 {
+        font-size: 30px;
+    }
+
+    .course-content_header p,
+    i {
+        font-size: 18px;
+    }
+
+    .course-content_main {
+        width: 90%;
+        top: 2rem;
+        gap: 2rem;
+    }
+
+    .content_main {
+        height: auto;
+    }
+
+    .content_main p {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .main_course-header h2 {
+        font-size: 30px;
+    }
+
+    .course-title {
+        width: 90%;
+    }
+
+    .course-title h3 {
+        font-size: 24px;
+    }
+
+    .courses-container {
+        width: 95%;
+        height: 100%;
+    }
+
+    .course-week {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .course-week h3 {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .course-day {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .course-items li {
+        font-size: 16px;
+    }
+
+    .job-header {
+        height: 15rem;
+    }
+
+    .job-header h1 {
+        font-size: 30px;
+    }
+
+    .job-title {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .job-card,
+    .salary-card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .job-card h2 {
+        font-size: 24px;
+    }
+
+    .salary-card p {
+        font-size: 20px;
+    }
+
+    .placement-container {
+        gap: 2rem;
+    }
+
+    .place-card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .place-card h2 {
+        font-size: 20px;
+    }
+}
